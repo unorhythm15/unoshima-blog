@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     syncCount: function () {
-      this.count = Number(this.tempCount);
+      this.count = Number(this.tempCount)
     }
   }
 }
