@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/post">Post</router-link>
-    </nav>
+    <header-item/>
+    <slider/>
+    <test/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import HeaderItem from '@/components/HeaderItem.vue'
+import Slider from '@/components/Slider.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeaderItem, Slider
+  }
 }
 </script>
 
