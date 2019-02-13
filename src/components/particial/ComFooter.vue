@@ -16,7 +16,7 @@ export default {
     makeCopyRightsStr: function () {
       const today = new Date()
       const currentYear = today.getFullYear()
-      
+
       if (this.firstIssuedYear === currentYear) {
         return '© ' + this.firstIssuedYear + ' ' + this.issuer
       } else {
