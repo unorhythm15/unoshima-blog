@@ -8,8 +8,8 @@
   </div>
 </template>
 
-<style>
-#slider {
-  background-color: aquamarine
+<style scoped>
+#header {
+  background-color: grey
 }
 </style>
