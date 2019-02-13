@@ -13,12 +13,14 @@ export default {
     }
   },
   computed: {
-    makeCopyRightsStr: function() {
-      const today = new Date(), currentYear = today.getFullYear()
+    makeCopyRightsStr: function () {
+      const today = new Date()
+      const currentYear = today.getFullYear()
+      
       if (this.firstIssuedYear === currentYear) {
         return '© ' + this.firstIssuedYear + ' ' + this.issuer
       } else {
-        return '© ' + this.firstIssuedYear + '-' + currentYear  + ' ' + this.issuer
+        return '© ' + this.firstIssuedYear + '-' + currentYear + ' ' + this.issuer
       }
     }
   }
