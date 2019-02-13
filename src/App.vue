@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <header-item/>
-    <slider/>
-    <test/>
+    <com-header/>
+    <com-slider/>
     <router-view/>
+    <com-footer/>
   </div>
 </template>
 
 <script>
-import HeaderItem from '@/components/HeaderItem.vue'
-import Slider from '@/components/Slider.vue'
+import ComHeader from '@/components/particial/ComHeader.vue'
+import ComFooter from '@/components/particial/ComFooter.vue'
+import ComSlider from '@/components/particial/ComSlider.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderItem, Slider
+    ComHeader, ComFooter, ComSlider
   }
 }
 </script>
