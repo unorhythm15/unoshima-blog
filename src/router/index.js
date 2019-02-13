@@ -10,11 +10,13 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
+      name: 'Home',
       path: '/',
       component: Home
     },
     {
-      path: '/post',
+      name: 'Post',
+      path: '/post/:id',
       component: Post
     }
   ]
