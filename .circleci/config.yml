@@ -3,8 +3,8 @@ jobs:
   deploy:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.15.0
       - image: devillex/docker-firebase:latest
+      - image: circleci/node:8.15.0
 
     working_directory: ~/Git/unoshima-blog
 
