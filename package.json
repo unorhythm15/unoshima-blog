@@ -13,8 +13,10 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "firebase": "^5.8.2",
+    "flamelink": "^0.19.12",
     "vue": "^2.6.6",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

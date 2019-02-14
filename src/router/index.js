@@ -16,7 +16,7 @@ const router = new Router({
     },
     {
       name: 'Post',
-      path: '/post/:id',
+      path: '/post',
       component: Post
     }
   ]
