@@ -4,7 +4,7 @@ jobs:
     docker:
       # specify the version you desire here
       # - image: devillex/docker-firebase:latest
-      - image: circleci/node:4.8.2
+      - image: circleci/node:8.15.0
 
     working_directory: ~/Git/unoshima-blog
 
@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run:
           name: install firebase
-          command: npm install -g firebase-tools --unsafe
+          command: npm install -g firebase-tools@5.1.1
       - run:
           name: npm install
           command: npm install --unsafe
