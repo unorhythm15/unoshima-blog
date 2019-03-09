@@ -3,7 +3,6 @@ jobs:
   deploy:
     docker:
       # specify the version you desire here
-      # - image: devillex/docker-firebase:latest
       - image: devillex/docker-firebase:latest
 
 
@@ -11,9 +10,6 @@ jobs:
 
     steps:
       - checkout
-      # - run:
-      #     name: install firebase
-      #     command: npm install firebase-tools@5.1.1
       - run:
           name: npm install
           command: npm install --unsafe

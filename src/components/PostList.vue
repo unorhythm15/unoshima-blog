@@ -20,11 +20,11 @@ export default {
   methods: {
     getContent: function () {
       const app = flamelink({ firebaseApp })
-      let that = this
+      let self = this
       app.content.get('posts')
         .then(posts => {
           Object.keys(posts).forEach(function (data) {
-            that.body += posts[data].content
+            self.body += posts[data].content
           })
         })
     }
