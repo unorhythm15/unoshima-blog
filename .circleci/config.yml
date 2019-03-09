@@ -17,12 +17,6 @@ jobs:
           name: npm install
           command: npm install --unsafe
       - run:
-          name: Add path of firebase
-          command: export PATH=/home/node/.npm-global/bin:$PATH
-      - run:
-          name: cat .bash_profile
-          command: cat ~/.bash_profile
-      - run:
           name: build Vue
           command: npm run build
       - run:
